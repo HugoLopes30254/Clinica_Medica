@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - CLIMED</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f2f2f2; /* Define a cor de fundo da página inicial */
+        }
+
+        .form-container {
+            text-align: center;
+            border: 2px solid #4CAF50; /* Adiciona uma borda verde ao redor do formulário */
+            border-radius: 10px; /* Adiciona cantos arredondados à borda */
+            padding: 20px; /* Adiciona espaçamento interno */
+            background-color: #fff; /* Define a cor de fundo */
+        }
+
+        form input {
+            margin: 10px 0;
+            padding: 10px;
+            width: 200px;
+        }
+
+        form button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #45a049;
+        }
+
+        .back-button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            margin-top: 20px;
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Login - CLIMED</h2>
+        <form action="login.php" method="POST">
+            <input type="email" name="email" placeholder="Email" required><br>
+            <input type="password" name="password" placeholder="Senha" required><br>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    
+    <div style="text-align: center; margin-top: 20px;">
+        <!-- Alteração no link para redirecionar para a página 'pagina_inicial.html' -->
+        <a href="pagina_inicial.html" class="back-button">Voltar para o Menu Inicial</a>
+    </div>
+
+    <script>
+        // Adiciona um evento de clique ao botão de login
+        document.querySelector('form button').addEventListener('click', function() {
+            // Redireciona para a página 'pagina_inicial.html' ao clicar no botão "Login"
+            window.location.href = 'clinicamedica.html';
+        });
+    </script>
+</body>
+</html>
