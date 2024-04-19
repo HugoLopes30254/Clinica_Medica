@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal - CLIMED</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f2f2f2; /* Define a cor de fundo */
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px; /* Adiciona espaçamento interno */
+            border: 2px solid #4CAF50; /* Adiciona uma borda verde ao redor do conteúdo */
+            border-radius: 10px; /* Adiciona cantos arredondados à borda */
+            background-color: #fff; /* Define a cor de fundo do conteúdo */
+        }
+
+        .logo-name {
+            margin-bottom: 20px; /* Espaçamento abaixo do logo e nome da empresa */
+        }
+
+        .logo-name img {
+            width: 200px; /* Ajusta o tamanho do logo */
+            margin-bottom: 10px; /* Espaçamento abaixo do logo */
+        }
+
+        .company-name {
+            font-size: 24px; /* Define o tamanho do nome da empresa */
+            font-weight: bold; /* Define a fonte em negrito */
+            color: #333; /* Define a cor do texto */
+            margin-bottom: 10px; /* Espaçamento abaixo do nome da empresa */
+        }
+
+        .buttons {
+            margin-bottom: 20px; /* Espaçamento abaixo das opções */
+        }
+
+        .buttons a {
+            margin: 0 10px;
+            padding: 10px 20px;
+            background-color: #4CAF50; /* Altera a cor de fundo para verde */
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .buttons a:hover {
+            background-color: #45a049; /* Altera a cor de fundo ao passar o mouse */
+        }
+
+        .forgot-password {
+            color: blue; /* Define a cor do texto como azul */
+            font-size: 14px; /* Ajusta o tamanho da fonte */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo-name">
+            <img src="C:\Users\Duarte\Desktop\logo.png" alt="Logo"> 
+            <div class="company-name">
+                CLIMED
+            </div>
+        </div>
+        <div class="buttons">
+            <a href="register.html">Registrar</a> 
+            <a href="login.html" onclick="showForm('login')">Login</a>
+        </div>
+        <div class="forgot-password">
+            <a href="recuperaçaopalavrapasse.html">Esqueceu a senha?</a> <!-- Adiciona um link para a página de recuperação de senha -->            
+        </div>
+    </div>
+</body>
+</html>
